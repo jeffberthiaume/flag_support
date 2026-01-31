@@ -8,7 +8,7 @@
 
 Having issues or questions? We'd love to hear from you!
 
-**Email:** YOUR_EMAIL@gmail.com
+**Email:** jeffberthiaume@gmail.com
 
 ---
 
