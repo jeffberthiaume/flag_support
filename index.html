@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag! - Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #1a3a52 0%, #2d5a7b 50%, #1a3a52 100%);
+            min-height: 100vh;
+            color: #fff;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            font-size: 64px;
+            font-weight: 900;
+            font-style: italic;
+            background: linear-gradient(to bottom, #e54444, #ff8533);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: none;
+            margin-bottom: 8px;
+        }
+
+        .tagline {
+            font-size: 16px;
+            color: rgba(255,255,255,0.8);
+            font-style: italic;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .card h2 {
+            font-size: 20px;
+            margin-bottom: 16px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card h2 span {
+            font-size: 24px;
+        }
+
+        .contact-link {
+            display: inline-block;
+            background: linear-gradient(to right, #e54444, #ff8533);
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .contact-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(229, 68, 68, 0.4);
+        }
+
+        .faq-item {
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .faq-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #ffcc66;
+            margin-bottom: 8px;
+        }
+
+        .faq-answer {
+            color: rgba(255,255,255,0.85);
+            line-height: 1.6;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: rgba(255,255,255,0.5);
+            font-size: 14px;
+        }
+
+        .snow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            color: rgba(255,255,255,0.3);
+            font-size: 14px;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="snow" id="snow"></div>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">FLAG!</div>
+            <div class="tagline">Max's Ice Fishing Challenge</div>
+        </div>
+
+        <div class="card">
+            <h2><span>📧</span> Contact Us</h2>
+            <p style="margin-bottom: 16px; color: rgba(255,255,255,0.8);">
+                Having issues or questions? We'd love to hear from you!
+            </p>
+            <a href="mailto:YOUR_EMAIL@gmail.com" class="contact-link">
+                Email Support
+            </a>
+        </div>
+
+        <div class="card">
+            <h2><span>❓</span> Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I play?</div>
+                <div class="faq-answer">
+                    Tap on raised flags to send Max running across the ice to reset them.
+                    Reset flags before their timers expire to earn points. Survive as many rounds as you can!
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I reset my progress?</div>
+                <div class="faq-answer">
+                    Go to Settings from the main menu and tap "Reset Progress" to start fresh.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Why aren't ads loading?</div>
+                <div class="faq-answer">
+                    Make sure you have an active internet connection. Ads are optional and
+                    only appear between rounds when rewards are offered.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I see leaderboards?</div>
+                <div class="faq-answer">
+                    Tap the trophy icon on the main menu. You'll need to be signed into
+                    Game Center on your device to view and compete on leaderboards.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Is my progress saved?</div>
+                <div class="faq-answer">
+                    Yes! Your high scores, stats, and upgrades are automatically saved.
+                    If you're signed into iCloud, your progress syncs across devices.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I earn extra lives?</div>
+                <div class="faq-answer">
+                    Catch fish that occasionally appear when resetting flags! Fish give you
+                    bonus lives. You can also earn the Extra Life reward between rounds.
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><span>🎮</span> About Flag!</h2>
+            <p style="color: rgba(255,255,255,0.85); line-height: 1.6;">
+                Flag! is a fast-paced arcade game inspired by the excitement of ice fishing.
+                Race across the frozen lake, reset tip-up flags before time runs out,
+                catch fish, build combos, and compete for the highest score!
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 Flag! All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        // Create snowflakes
+        const snow = document.getElementById('snow');
+        const snowflakes = ['❄', '❅', '❆', '•'];
+
+        for (let i = 0; i < 30; i++) {
+            const flake = document.createElement('div');
+            flake.className = 'snowflake';
+            flake.textContent = snowflakes[Math.floor(Math.random() * snowflakes.length)];
+            flake.style.left = Math.random() * 100 + '%';
+            flake.style.animationDuration = (Math.random() * 5 + 5) + 's';
+            flake.style.animationDelay = Math.random() * 5 + 's';
+            flake.style.fontSize = (Math.random() * 10 + 10) + 'px';
+            snow.appendChild(flake);
+        }
+    </script>
+</body>
+</html>
