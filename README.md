@@ -27,7 +27,7 @@ Make sure you have an active internet connection. Ads are optional and only appe
 Tap the trophy icon on the main menu. You'll need to be signed into Game Center on your device to view and compete on leaderboards.
 
 ### Is my progress saved?
-Yes! Your high scores, stats, and upgrades are automatically saved. If you're signed into iCloud, your progress syncs across devices.
+Yes! Your high scores, stats, and upgrades are saved on your device.
 
 ### How do I earn extra lives?
 Catch fish that occasionally appear when resetting flags! Fish give you bonus lives. You can also earn the Extra Life reward between rounds.
